@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Ad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <p id="currentTime"></p>
+    <div class="container mt-5">
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="table-header">
+                    <tr>
+                        <th>
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="selectAllProfiles">
+                                <span class="checkmark"></span>
+                            </label>
+                        </th>
+                        <th>Profile</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Domain</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody">
+                    <!-- User data will be added here -->             
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>ID</h3>
+            <table id="modalTable">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+                <tbody id="modalTableBody">
+                    <!-- Campaign and attendance data will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="assets/js/Ad.js"></script>
+</body>
+</html>
